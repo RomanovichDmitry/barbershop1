@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Барбершоп "Барбершоп"</title>
+	<title>Барбершоп "Барбершоп!"</title>
 	<meta name="description" content="Описание тестовой страницы Барбершоп">
 	<meta name="keyword" content="барбершоп, записаться, недорого, санкт петербург">
 	<link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,7 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 				<a href="#">
-					<img src="#" alt="Логотип организации">Logotip
+					<img src="img/logo.png" alt="Логотип организации">
 				</a>
 			<ul class="navigation-list">
 
@@ -32,7 +32,8 @@
 				</li>
 			</ul>
 			<ul class="user-navigation">
-				<li class="logo-link">Вход</li>
+				<li class="login-link">
+				<a class="login-link" href="login.html">Вход</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -73,10 +74,10 @@
 		<section class="gallery">
 			<h2>Фотогалерея</h2>
 			<figure class="gallery-slider">
-				<a href="#"><img src="#" alt="Фото салона"></a>
+				<a href="#"><img src="img/Layer 21.jpg" alt="Фото салона"></a>
 			</figure>
-			<span class="button gallery-button-back">Назад</span>
-			<span class="button gallery-button-next">Вперед</span>
+			<button class="button gallery-button-back">Назад</button>
+			<button class="button gallery-button-next">Вперед</button>
 		</section>
 		<section class="contact-info">
 			<h2>Контактная информация</h2>
@@ -94,8 +95,26 @@
 		<section class="contacts">
 			<h2>Записаться</h2>
 			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-			<!-- Контактная форма -->
-			<button>Отправить</button>
+			<form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+				<P class="appointment-item">
+					<label for="appointment-data">Дата</label>
+					<input type="text" id="appointment-data" placeholder="08.10.2017" value="">
+
+				</P>
+				<P class="appointment-item">
+					<label for="appointment-time">Время</label>
+					<input type="text" id="appointment-time" placeholder="10:00" value="" >
+				</P>
+				<P class="appointment-item">
+					<label for="appointment-name">Ваше имя</label>
+					<input type="text" id="appointment-name" placeholder="Дмитрий" value="">
+				</P>
+				<P class="appointment-item">
+					<label for="appointment-tel">Телефон</label>
+					<input type="tel" id="appointment-tel" placeholder="+7-(XXX)-XXX-XX-XX" value="">
+				</P>
+			<button class="button" type="submit">Отправить</button>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -117,11 +136,31 @@
 	<section class="modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль</p>
-		<span class="modal-close">X</span>
+		<form action="https://echo.htmlacademy.ru" class="login-form" method="POST">
+			<p>
+				<label for="user-login" class="vissualy-hidden">Логин</label>
+				<input type="text" class="login-icon-user" id="user-login" name="login" placeholder="Логин">
+			</p>
+			<p>
+				<label for="user-password">Пароль</label>
+				<input type="password" class="login-icon-password" id="user-password" name="password" placeholder="Пароль">
+			</p>
+			<p class="login-password-info">
+				<input type="checkbox" class="visually-hidden" id="remember-me" name="remember" class="visually-hidden">
+				<span class="check-box-indicator"></span>
+				<label for="remember-me">Запомни меня</label>
+				<a href="#" class="restore">Я забыл пароль!</a>
+			</p>
+			<button class="button" type="submit" value="">Отправить</button>
+		</form>
+		<button type="button" class="modail-close">Закрыть</button>
 	</section>
-	<section class="map">
-		<h2>Как проехать</h2>
-		<span class="modal-close">X</span>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как проехать</h2>
+		<p>
+			<img src="img/map.jpg" alt="Адрес организации" width="780" height="560">
+		</p>
+		<button type="button" class="modal-close">Закрыть</span>
 	</section>
 </body>
 </html>
