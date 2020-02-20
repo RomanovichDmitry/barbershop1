@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color:#fff;
+
+    background-color:#000;
+    background-image: url(../img/Layer.jpg) ;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+a {
+    text-decoration: none;
+}
+.main-navigation{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: #000;
+}
+.navigation-list,
+.user-navigation {
+    list-style: none;
+}
+.navigation-list a,
+.user-navigation a {
+    color: #fff;
+}
+.navigation-list a:hover,
+.user-navigation a:hover,
+.navigation-list a:focus,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+.feauter-list {
+    list-style: none;
+}
+.feauter-item {
+    text-align: center;
+}
+.feauter-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+.index-colums {
+    color: #000;
+    background-color:#fff;
+    background-image:url(../img/Layer10.png);
+}
