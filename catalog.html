@@ -5,10 +5,11 @@
 	<title>Каталог Барбершопа</title>
 	<meta name="description" content="Каталог товаров и услуг">
 	<meta name="keyword" content="барбершоп, записаться, недорого, санкт петербург">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="next-body">
 	<header class="main-header">
 		<nav class="main-navigation">
 				<a href="index.html">
@@ -26,7 +27,7 @@
 					<a href="#">Прайс-лист</a>
 				</li>
 				<li class="site-navigation-current">
-					<a href="#">Магазин</a>
+					<a href="catalog.html">Магазин</a>
 				</li>
 				<li>
 					<a href="#">Контакты</a>
@@ -60,7 +61,7 @@
 					<label for="filter-mr-natty">Mr Natty</label>
 					</li>
 					<li class="filter-option">
-						<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="suavecito" id="filter-suavecito">
+						<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="suavecito" id="filter-suavecito" disabled>
 					<label for="filter-suavecito">Suavecito</label>
 					</li>
 					<li class="filter-option">
@@ -193,28 +194,32 @@
 				</li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item"><a href="#">1</a></li>
+				<li class="pagination-item"><a class="button" href="#">1</a></li>
 				<li class="pagination-item pagination-item-current"><a>2</a></li>
-				<li class="pagination-item"><a href="#"></a>3</li>
-				<li class="pagination-item"><a href="#">4</a></li>
+				<li class="pagination-item"><a class="button" href="#">3</a></li>
+				<li class="pagination-item"><a class="button" href="#">4</a></li>
 			</ul>
 		</section>
 	</main>
 	<footer class="main-footer">
+		<div class="footer-contacts">
 		<p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-			<ins>КАК НАС НАЙТИ?</ins> <br>
+			<a href="#">КАК НАС НАЙТИ?</a><br>
 			ТЕЛЕФОН: +7 (495) 666-02-66</p>
+		</div>
 			<div class="social-map">
 		<b>Давайте дружить!</b>
 		<ul class="social">
-			<li class="social-network"><a href="#">Вконтакте</a></li>
-			<li class="social-network"><a href="#">Фэйсбук</a></li>
-			<li class="social-network"><a href="#">Инстаграмм</a></li>
+			<li><a class="social-network" href="#">Вконтакте</a></li>
+			<li><a class="social-network" href="#">Фэйсбук</a></li>
+			<li><a class="social-network" href="#">Инстаграмм</a></li>
 		</ul>
 			</div>
+			<div class="footer-copyright">
 			<b>Разработано:</b>
 			<a class="button" href="#">HTMLAcademy</a>
+			</div>
 	</footer>
 	<section class="modal-login">
 		<h2>Личный кабинет</h2>
@@ -229,9 +234,9 @@
 				<input type="password" class="login-icon-password" id="user-password" name="password" placeholder="Пароль">
 			</p>
 			<p class="login-password-info">
-				<input type="checkbox" class="visually-hidden" id="remember-me" name="remember" class="visually-hidden">
+				<input type="checkbox" id="remember-me" name="remember" class="visually-hidden">
 				<span class="check-box-indicator"></span>
-				<label for="remember-me">Запомни меня</label>
+				<label class="login-checkbox" for="remember-me">Запомни меня</label>
 				<a href="#" class="restore">Я забыл пароль!</a>
 			</p>
 			<button class="button" type="submit" value="">Отправить</button>
