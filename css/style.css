@@ -141,10 +141,11 @@ a {
 .modal-login {
     color: #000;
 
+    background-image: url(../img/Layer_colums.jpg);
     background-color: #f8f3f0;
-    background-image: url(../img/Layer_colums.jpg.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+    
 }
 .modal-login h2 {
     font-size: 30px;
@@ -158,8 +159,9 @@ a {
     background-color:unset;
     border:2px solid #000000;
 }
-.login-form input:focus {
-    background-color: #663d15;
+.login-form input:focus,
+.login-form input:hover {
+    border-color: #663d15;
 }
 .login-checkbox:focus,
 .login-checkbox:hover {
