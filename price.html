@@ -9,14 +9,14 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="next-body inner-content">
 	<header class="main-header">
 		<nav class="main-navigation">
-				<a class="main-logo" href="#">
-					<img src="img/index-logo.svg" alt="Логотип Барбершоп" width="368" height="153">
-				</a>
 				<div class="main-navigation-wrapper">
 					<div class="container">
+						<a class="logo-braber" href="index.html">
+							<img src="img/logo.png" alt="Логотип организации">
+						</a>
 			<ul class="navigation-list">
 				<li>
 					<a href="#">Информация</a>
@@ -36,97 +36,53 @@
 			</ul>
 			<ul class="user-navigation">
 				<li>
-				<a class="login-link" href="/login.html">Вход</a></li>
+				<a class="login-link" href="login.html">Вход</a></li>
 			</ul>
 			</div>
 		</div>
 		</nav>
 	</header>
 	<main class="container">
-		<h1 class="vissualy-hidden">Барбершоп "Бородинский"</h1>
-		<section class="feauters">
-			<h2 class="vissualy-hidden">Преимущества</h2>
-			<ul class="feauter-list">
-				<li class="feauter-item">
-					<h3>Быстро</h3>
-					<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ </p>
-				</li>
-				<li class="feauter-item">
-					<h3>Круто</h3>
-					<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
-					МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!</p>
-				</li>
-				<li class="feauter-item">
-					<h3>Дорого</h3>
-					<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
-				</li>
-			</ul>
-		</section>
-		<div class="index-colums">
-		<section class="news">
-			<h2>Новости</h2>
-			<ul class="news-list">
-				<li class="news-item">
-					<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-					<time datetime="2020-01-05">5 Января</time>
-				</li>
-				<li class="news-item">
-					<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-					<time datetime="2020-01-05">5 Января</time>
-				</li>
-			</ul>
-			<a class="button" href="#">Все новости</a>
-		</section>
-		<section class="gallery">
-			<h2>Фотогалерея</h2>
-			<div class="gallery-container">
-			<figure class="gallery-slider">
-				<a href="#"><img src="img/Layer 21.jpg" alt="Фото салона"></a>
-			</figure>
-			<button class="button gallery-button-back disabled">Назад</button>
-			<button class="button gallery-button-next">Вперед</button>
-		</div>
-		</section>
-		</div>
-		<div class="index-colums">
-		<section class="contact-info">
-			<h2>Контактная информация</h2>
-			<p class="contact-addres">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-			ТЕЛЕФОН: +7 (495) 666-02-66</p>
-			<p class="contact-addres">
-				ВРЕМЯ РАБОТЫ: <br> 
-				ПН—ПТ: С 10:00 ДО 22:00 <br>
-				СБ—ВС: С 10:00 ДО 19:00 <br>
-			</p>
-			<a class="button map-button" href="#">Как проехать?</a>
-			<a class="button" href="#">Обратная связь</a>
-		</section>
-		<section class="contacts">
-			<h2>Записаться</h2>
-			<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-			<form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
-				<P class="appointment-item">
-					<label for="appointment-data">Дата</label>
-					<input type="text" id="appointment-data" placeholder="08.10.2017" value="">
-				</P>
-				<P class="appointment-item">
-					<label for="appointment-time">Время</label>
-					<input type="text" id="appointment-time" placeholder="10:00" value="" >
-				</P>
-				<P class="appointment-item">
-					<label for="appointment-name">Ваше имя</label>
-					<input type="text" id="appointment-name" placeholder="Дмитрий" value="">
-				</P>
-				<P class="appointment-item">
-					<label for="appointment-tel">Телефон</label>
-					<input type="tel" id="appointment-tel" placeholder="+7-(XXX)-XXX-XX-XX" value="">
-				</P>
-			<button class="button" type="submit">Отправить</button>
-			</form>
-		</section>
-		</div>
-	</main>
+        <div class="inner-page-container">
+            <h1 class="page-title">Прайс-лист</h1>   
+        <ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs-current">Прайс-лист</li>
+        </ul>
+    </div>
+    <section class="inner-content">
+        <h2 class="big-hedding">Истинно мужская классика</h2>
+    <div>
+        <h3>Мы используем только лучшие средства: </h3>
+        <ul class="custom-list-1">
+            <li>Baxter of Californi</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+        </ul>
+        <h3>Цены на услуги наших мастеров:</h3>
+        <table class="custom-table-1">
+            <tr>
+                <td>Стрижка</td>
+                <td>1500Р</td>
+            </tr>
+            <tr>
+                <td>Стрижка бороды</td>
+                <td>500Р</td>
+            </tr>
+            <tr>
+                <td>Накрутка усов</td>
+                <td>1000Р</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>Несколько слов о нас:</h3>
+        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+    </div>
+    </section>
+    </main>
 	<footer class="main-footer">
 		<div class="container">	
 			<div class="footer-contacts">
@@ -172,13 +128,11 @@
 		<button type="button" class="modail-close">Закрыть</button>
 	</section>
 	<section class="modal modal-map">
-		<h2 class="vissualy-hidden">Как проехать</h2>
+		<h2 class="visually-hidden">Как проехать</h2>
 		<p>
 			<img src="img/map.jpg" alt="Адрес организации" width="780" height="560">
 		</p>
-		<button type="button" class="modail-close">Закрыть</span>
+		<button type="button" class="modal-close">Закрыть</span>
 	</section>
-	<div class="modal-overlay"></div>
-	<script src="js/script.js"></script>
 </body>
 </html>

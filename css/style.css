@@ -188,25 +188,142 @@ a {
 .footer-copyright .button:focus {
     color: #000;
 }
-.modal-login {
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.modal {
+    position: fixed;
+
+    display: none;
     color: #000;
 
     background-image: url(../img/Layer_colums.jpg);
     background-color: #f8f3f0;
     background-position: 0 0;
     background-repeat: repeat;
+    z-index: 2;
+}
+.modal-show {
+    display: block;
+    animation-name: boucePopap;
+    animation-duration: 0.5s;
+}
+.modal-login {
+    top:120px;
+    left: 50%;
     
+
+    width: 300px;
+    margin-left: -231px;
+    padding: 50px 80px;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.6);
+}
+.modail-close {
+    position: absolute;
+    
+    width: 22px;
+    height: 22px;
+    box-sizing:border-box;
+    border: none;
+
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.0);
+
+    top: 8px;
+    right: -33px;
+    font-size: 0px;
+}
+.modail-close::before,
+.modail-close::after {
+    position: absolute;
+    content: "" ;
+
+    background-color: #fff;
+    width: 22px;
+    height: 4px;
+
+    top: 40%;
+    right: -3%;
+}
+.modail-close::before {
+    transform: rotate(45deg);
+}
+.modail-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-login p {
+    margin: 0px;
+    padding: 0px;
+}
+.modal-login .login-password-info {
+    margin-top: 4px;
+    position: relative;
+}
+.login-checkbox::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    left: 1px;
+    top: 3px;
+}
+.login-password-info input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 7px;
+    left: 5px;
+    background: url(/img/cross.svg) no-repeat 0 0;
 }
 .modal-login h2 {
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 42px;
+}
+.modal-login .button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.modal-login input {
+    padding: 12px 15px;
+    width: 300px;
+    box-sizing: border-box;
+    height: 43px;
+    margin-bottom: 9px; 
+}
+
+.login-checkbox {
+    padding-left: 32px;
+}
+.enter-user {
+    margin-top: 15px;
+}
+.login-icon-user {
+    margin-top: 11px; 
+}
+.restore {
+    float: right;
 }
 .login-form input[type="text"],
 .login-form input[type="password"] {
     font: inherit;
     text-transform: uppercase;
-
-    background-color:unset;
+    
+    padding-right: 40px;
+    background-color: #f9f6f3;
     border:2px solid #000000;
 }
 .login-form input:focus,
@@ -217,6 +334,14 @@ a {
 .login-checkbox:hover {
     color:#663d15;
 }
+
+.login-icon-user {
+    background: url("../img/user.svg") no-repeat 270px center;
+}
+.login-icon-password {
+background:url("../img/lock.svg") no-repeat 268px 13px;
+}
+
 .restore {
     color: #000;
     text-decoration: underline;
@@ -224,6 +349,23 @@ a {
 .restore:hover,
 .restore:focus {
     text-decoration: none;
+}
+
+.modal-map {
+    top: 50%;
+    left: 50%;
+
+    width: 766px;
+    height: 560px;
+
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid #fff;
+}
+.modal-map p {
+    margin: 0px;
+    padding: 0px;
 }
 .page-title {
     font-size: 30px;
@@ -787,4 +929,91 @@ input[type="radio"].vissualy-hidden {
     left: 2px;
     top: 7px;
     transform: rotate(45deg);
+}
+
+.inner-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.inner-content h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.inner-content p {
+    margin: 14px 0px;
+}
+.inner-content table {
+    border-collapse: collapse;
+}
+.inner-content td {
+    padding: 10px 15px;
+    border: 2px solid #000;
+}
+.inner-content .big-hedding {
+
+    display: flex;
+    align-items:center;
+    
+    margin-top: 55px;
+    margin-bottom: 65px;
+}
+.big-hedding::before,
+.big-hedding::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #000;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.big-hedding::before {
+    margin-right: 25px;
+}
+.big-hedding::after {
+    margin-left: 25px;
+}
+.custom-list-1 {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.custom-list-1 li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.custom-list-1 li::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);
+    top: 8px;;
+    left: 0;
+}
+.custom-table-1 {
+    width: 100%;
+}
+.custom-table-1 td {
+    width: 50%;
+}
+.custom-table-1 td:last-child {
+    text-align: center;
+}
+
+/* Анимации */
+
+@keyframes boucePopap {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
 }

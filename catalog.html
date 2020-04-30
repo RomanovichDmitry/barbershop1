@@ -229,25 +229,24 @@
 				</div>
 		</div>
 	</footer>
-	<section class="modal-login">
+	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль</p>
-		<form action="https://echo.htmlacademy.ru" class="login-form" method="POST">
+		<form action="https://echo.htmlacademy.ru" class="login-form" met	hod="POST">
 			<p>
 				<label for="user-login" class="vissualy-hidden">Логин</label>
 				<input type="text" class="login-icon-user" id="user-login" name="login" placeholder="Логин">
 			</p>
 			<p>
-				<label for="user-password">Пароль</label>
+				<label class="vissualy-hidden" for="user-password">Пароль</label>
 				<input type="password" class="login-icon-password" id="user-password" name="password" placeholder="Пароль">
 			</p>
 			<p class="login-password-info">
-				<input type="checkbox" id="remember-me" name="remember" class="vissualy-hidden">
-				<span class="check-box-indicator"></span>
-				<label class="login-checkbox" for="remember-me">Запомни меня</label>
+				<input class="vissualy-hidden" type="checkbox" id="remember-me" name="remember" class="visually-hidden" checked>
+				<label class="login-checkbox" for="remember-me">Запомните меня</label>
 				<a href="#" class="restore">Я забыл пароль!</a>
 			</p>
-			<button class="button" type="submit" value="">Отправить</button>
+			<button class="button enter-user" type="submit" value="">Войти</button>
 		</form>
 		<button type="button" class="modail-close">Закрыть</button>
 	</section>
@@ -256,7 +255,7 @@
 		<p>
 			<img src="img/map.jpg" alt="Адрес организации" width="780" height="560">
 		</p>
-		<button type="button" class="modal-close">Закрыть</span>
+		<button type="button" class="modail-close">Закрыть</span>
 	</section>
 </body>
 </html>
